@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taniti Website Flow Wireframe</title>
+<style>
+:root{--ink:#203746;--line:#244050;--paper:#f7f8f7;--block:#e5e9e9;--soft:#eef1f1;--accent:#dce9df}
+*{box-sizing:border-box}
+body{margin:0;background:#f1f2f1;color:var(--ink);font:15px/1.4 Arial,Helvetica,sans-serif}
+main{width:min(1100px,calc(100% - 32px));margin:24px auto;padding:22px;background:var(--paper);border:2px solid var(--line)}
+h1{text-align:center;font-size:25px;margin:0 0 18px}
+h2{font-size:17px;margin:0 0 10px}
+.flow{display:grid;grid-template-columns:repeat(9,auto);align-items:center;justify-content:center;gap:10px;margin:0 auto 20px}
+.step{min-height:48px;min-width:105px;padding:10px;border:2px solid var(--line);background:var(--block);display:grid;place-items:center;text-align:center;font-size:13px;font-weight:700}
+.arrow{font-size:24px;text-align:center}
+.site{border:2px solid var(--line);padding:12px;background:#f1f3f3}
+.nav{min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 14px;border:2px solid var(--line);background:var(--block);margin-bottom:14px;font-weight:700}
+.logo{font-size:20px}.links{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end;font-size:13px}
+.hero{padding:20px;border:2px solid var(--line);background:#e1e6e6;text-align:center;margin-bottom:14px}
+.placeholder{font-weight:700;margin-bottom:10px}.copy{max-width:650px;margin:7px auto;padding:7px;border:1px solid var(--line);background:var(--soft);font-weight:700}.action{display:inline-block;margin-top:4px;padding:7px 18px;border:2px solid var(--line);background:var(--accent);font-weight:700}
+.section{border:2px solid var(--line);background:var(--block);padding:12px;margin-bottom:14px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{min-height:82px;border:2px solid var(--line);background:var(--soft);display:grid;place-items:center;text-align:center;padding:12px;font-weight:700}
+.fields{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}.field{border:1px solid var(--line);background:var(--soft);padding:9px;text-align:center;font-size:13px}
+.info{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}.info span{border:1px solid var(--line);background:var(--soft);padding:10px;text-align:center;font-size:13px}
+.footer{display:flex;justify-content:space-between;gap:12px;padding:12px;border:2px solid var(--line);background:var(--block);font-weight:700;font-size:13px}
+.note{font-size:12px;color:#405761;text-align:center;margin:10px 0 0}
+@media(max-width:760px){.flow{grid-template-columns:1fr;gap:6px}.arrow{transform:rotate(90deg)}.cards{grid-template-columns:repeat(2,1fr)}.fields,.info{grid-template-columns:repeat(2,1fr)}.nav{align-items:flex-start;flex-direction:column}.links{justify-content:flex-start}}
+@media(max-width:460px){main{width:100%;margin:0;padding:12px}.cards,.fields,.info{grid-template-columns:1fr}.footer{flex-direction:column}}
+@media print{body{background:white}main{width:100%;margin:0;border:1px solid #333}.flow{grid-template-columns:repeat(9,auto)}.step{min-width:80px}.arrow{transform:none}}
+</style>
+</head>
+<body>
+<main>
+<h1>Taniti Website Flow Wireframe</h1>
+<div class="flow" aria-label="Suggested user flow">
+<div class="step">Home</div><div class="arrow" aria-hidden="true">&#8594;</div>
+<div class="step">Explore Activities</div><div class="arrow" aria-hidden="true">&#8594;</div>
+<div class="step">Activity Details</div><div class="arrow" aria-hidden="true">&#8594;</div>
+<div class="step">Plan Your Trip</div><div class="arrow" aria-hidden="true">&#8594;</div>
+<div class="step">Visitor Info<br>Stay and Dining</div>
+</div>
+<div class="site">
+<header class="nav"><div class="logo">LOGO / TANITI</div><nav class="links" aria-label="Main navigation"><span>Explore Activities</span><span>Plan Your Trip</span><span>Dining</span><span>Stay</span><span>Visitor Info</span></nav></header>
+<section class="hero"><div class="placeholder">HERO IMAGE / BEACH BACKGROUND</div><div class="copy">Discover the Beauty of Taniti</div><div class="copy">Relax, explore, and enjoy island life</div><div class="action">Plan My Trip</div></section>
+<section class="section"><h2>Popular Activities</h2><div class="cards"><div class="card">Beach</div><div class="card">Snorkeling</div><div class="card">Hiking</div><div class="card">Culture &amp; Food</div></div><p class="note">Select an activity to view its details, then add it to the trip plan.</p></section>
+<section class="section"><h2>Plan Your Trip</h2><div class="fields"><div class="field">Arrival Date</div><div class="field">Length of Stay</div><div class="field">Main Interest</div><div class="field">Party Size</div></div><div class="action">Build My Trip Outline</div></section>
+<section class="section"><h2>Visitor Information</h2><div class="info"><span>Transportation</span><span>Weather</span><span>Travel Basics</span><span>Local Tips</span></div></section>
+<section class="section"><h2>Stay and Dining</h2><div class="cards"><div class="card">Find a Stay</div><div class="card">Eat Local</div><div class="card">Make a Day of It</div></div></section>
+<footer class="footer"><span>Taniti</span><span>Activities | Stay and Dining | Visitor Information</span><span>Trip Planner | Contact</span></footer>
+</div>
+<p class="note">Low-fidelity layout showing the proposed path from discovering activities to planning a visit.</p>
+</main>
+</body>
+</html>
